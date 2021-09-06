@@ -16,6 +16,6 @@ public/%.html: src/%.md template.html5 public/style.css
 	pandoc \
 	--to html5 \
 	--template=template \
-	--css="style.css" \
+	--css="./style.css" \
 	--output "$@" \
 	"$<"

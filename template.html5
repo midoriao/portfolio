@@ -41,7 +41,7 @@ $endfor$
 $if(title)$
 <header id="title-block-header">
 <h1 class="title">$title$ <span class='title-ja'>$title-ja$</span></h1>
-<p class="date">Last updated: <time>$date$</time></p>
+<p class="date"><small>Last updated: <time>$date$</time></small></p>
 </header>
 $endif$
 $if(toc)$
