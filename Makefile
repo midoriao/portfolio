@@ -1,18 +1,31 @@
-SOURCES := $(shell find src -type f -name '*.md')
-TARGETS := $(patsubst src/%.md,public/%.html,$(SOURCES))
+SRCDIR=content
+STATICDIR=static
+DESTDIR=public
+SOURCES := $(shell find $(SRCDIR) -type f -name '*.md')
+TARGETS := $(patsubst $(SRCDIR)/%.md,$(DESTDIR)/%.html,$(SOURCES))
 
 .PHONY: all
-all: $(TARGETS)
+all: build serve
 
 .PHONY: clean
 clean:
-	rm -f public/*.html
+	rm -rf $(DESTDIR)/*
 
 .PHONY: serve
 serve:
-	python -m http.server --directory public
+	python -m http.server --directory $(DESTDIR)
 
-public/%.html: src/%.md template.html5 public/style.css
+.PHONY: build
+build: copy-static $(TARGETS)
+
+.PHONY: copy-static
+copy-static: $(STATICDIR) $(DESTDIR)
+	cp -Rf $(STATICDIR)/* $(DESTDIR)/
+
+public:
+	mkdir -p public
+
+$(TARGETS): $(SOURCES) template.html5 $(DESTDIR)
 	pandoc \
 	--to html5 \
 	--template=template \
