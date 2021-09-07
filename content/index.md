@@ -3,8 +3,6 @@ pagetitle: Sota Sato - Group MMM
 title: Sota Sato
 title-ja: 佐藤創太
 author: Sota Sato
-year: "2021"
-date: "2021-09-06"
 ---
 
 ![pudding](./img/pumpkin_pudding.jpg){.photo}

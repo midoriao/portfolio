@@ -30,5 +30,7 @@ $(TARGETS): $(SOURCES) template.html5 $(DESTDIR)
 	--to html5 \
 	--template=template \
 	--css="./style.css" \
+	-M date:"$(shell date "+%Y-%m-%d")" \
+	-M year:"$(shell date "+%Y")" \
 	--output "$@" \
 	"$<"
