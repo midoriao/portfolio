@@ -1,6 +1,9 @@
 SRCDIR=content
 STATICDIR=static
 DESTDIR=public
+GIT_USERNAME="Sota Sato"
+GIT_EMAIL="sotasato@nii.ac.jp"
+DEPLOY_REPO:=$(shell git config --get remote.deploy.url)
 SOURCES := $(shell find $(SRCDIR) -type f -name '*.md')
 TARGETS := $(patsubst $(SRCDIR)/%.md,$(DESTDIR)/%.html,$(SOURCES))
 
@@ -22,6 +25,21 @@ build: copy-static $(TARGETS)
 copy-static: $(STATICDIR) $(DESTDIR)
 	cp -Rf $(STATICDIR)/* $(DESTDIR)/
 
+.PHONY: deploy
+deploy:
+	@echo "? remote repo: <$(DEPLOY_REPO)>"
+	rm -rf $(DESTDIR)
+	git clone $(DEPLOY_REPO) $(DESTDIR) --depth 1 --no-checkout -q
+	make build > /dev/null
+	@cd $(DESTDIR) \
+	&& git config user.name "$(GIT_USERNAME)" \
+	&& git config user.email "$(GIT_EMAIL)" \
+	&& git add . \
+	&& git checkout -q HEAD README.md \
+	&& git status \
+	&& git commit -m "Update" \
+	&& git push
+
 public:
 	mkdir -p public
 
@@ -34,3 +52,4 @@ $(TARGETS): $(SOURCES) template.html5 $(DESTDIR)
 	-M year:"$(shell date "+%Y")" \
 	--output "$@" \
 	"$<"
+
