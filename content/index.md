@@ -5,7 +5,7 @@ title-ja: 佐藤創太
 author: Sota Sato
 ---
 
-![pudding](./img/pumpkin_pudding.jpg){.photo}
+![My best homemade pumpkin pudding](./img/pumpkin_pudding.jpg){.photo}
 
 I am a student at {[National Institute of Informatics (NII)](https://www.nii.ac.jp/graduate/en/), [The Graduate University for Advanced Studies (SOKENDAI)](https://www.soken.ac.jp/en/)},
 supervised by [Ichiro Hasuo](https://group-mmm.org/~ichiro/).
@@ -25,7 +25,7 @@ _Hybrid System Falsification for Multiple-Constraint Parameter Synthesis: a Gas 
 - Sota Sato, Masaki Waga, Ichiro Hasuo.
 _Constrained Optimization for Hybrid System Falsification and Application to Conjunctive Synthesis._
 7th IFAC Conference on Analysis and Design of Hybrid Systems, IFAC-PapersOnLine, 2021
-(To appear)
+[[doi](https://doi.org/10.1016/j.ifacol.2021.08.501)]
 [[arXiv](https://arxiv.org/abs/2012.00319)]
 
 ## Talks
