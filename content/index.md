@@ -21,7 +21,8 @@ In particular, I am currently working on [search-based testing](https://en.wikip
 
 - Sota Sato, Atsuyoshi Saimen, Masaki Waga, Kenji Takao, Ichiro Hasuo.
 _Hybrid System Falsification for Multiple-Constraint Parameter Synthesis: a Gas Turbine Case Study._
-24th International Symposium on Formal Methods, Lecture Notes in Computer Science, 2021 (To appear)
+24th International Symposium on Formal Methods, Lecture Notes in Computer Science, 2021
+[[doi](https://doi.org/10.1007/978-3-030-90870-6_17)]
 - Sota Sato, Masaki Waga, Ichiro Hasuo.
 _Constrained Optimization for Hybrid System Falsification and Application to Conjunctive Synthesis._
 7th IFAC Conference on Analysis and Design of Hybrid Systems, IFAC-PapersOnLine, 2021
