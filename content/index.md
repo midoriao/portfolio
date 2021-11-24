@@ -14,7 +14,7 @@ My research interests lie in the application of [formal methods](https://en.wiki
 In particular, I am currently working on [search-based testing](https://en.wikipedia.org/wiki/Search-based_software_engineering) on [hybrid systems](https://en.wikipedia.org/wiki/Hybrid_system) by [temporal logics](https://en.wikipedia.org/wiki/Temporal_logic) and [metaheuristic optimization algorithms](https://en.wikipedia.org/wiki/Metaheuristic).
 
 [[orcid](https://orcid.org/0000-0001-7147-3989)]
-[[dblp](https://dblp.org/pid/280/0329.html)]
+[[dblp](https://dblp.org/pid/280/0329-1.html)]
 [[github](https://github.com/midoriao)]
 
 ## Papers
