@@ -22,7 +22,7 @@ jobs:
           uses: docker://klakegg/html-proofer:3.19.2
           with:
             entrypoint: /usr/local/bundle/bin/htmlproofer
-            args: public --check-html --empty-alt-ignore --url-ignore  'https://doi.org/10.1007/978-3-030-90870-6_17'
+            args: public --check-html --empty-alt-ignore --url-ignore "/doi.org/"
         - uses: actions/upload-artifact@v2
           with:
             name: contents
