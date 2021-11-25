@@ -1,0 +1,30 @@
+name: build
+on:
+  push:
+    branches:
+      - pandoc
+
+jobs:
+    build-content:
+      name: build contents
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v2
+        - name: install pandoc
+          run: |
+              curl -LO https://github.com/jgm/pandoc/releases/download/2.16.2/pandoc-2.16.2-1-amd64.deb && sudo dpkg -i pandoc-2.16.2-1-amd64.deb
+        - uses:  actions/setup-python@v2
+          with:
+            python-version: '3.9.5'
+        - name: make build
+          run: make build
+        - name: Test website
+          uses: docker://klakegg/html-proofer:3.19.2
+          with:
+            entrypoint: /usr/local/bundle/bin/htmlproofer
+            args: public --check-html --empty-alt-ignore --url-ignore  'https://doi.org/10.1007/978-3-030-90870-6_17'
+        - uses: actions/upload-artifact@v2
+          with:
+            name: contents
+            path: public
+
