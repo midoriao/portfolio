@@ -55,7 +55,7 @@ $endif$
 <main>
 $body$
 </main>
-<footer> &copy $year$ $author$</footer>
+<footer> &copy; $year$ $author$</footer>
 $for(include-after)$
 $include-after$
 $endfor$
