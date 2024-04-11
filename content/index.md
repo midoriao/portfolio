@@ -19,6 +19,15 @@ In particular, I am currently working on [search-based testing](https://en.wikip
 
 ## Papers
 
+- Sota Sato, Jie An, Zhenya Zhang, Ichiro Hasuo.
+_Optimization-Based Model Checking for Complex STL Specifications._
+36th International Conference on Computer-Aided Verification, 2024 (to appear)
+
+- Jesse Reimann, Nico Mansion, James Haydon, Benjamin Bray, Agnishom Chattopadhyay, Sota Sato, Masaki Waga, Étienne André, Ichiro Hasuo, Naoki Ueda, Yosuke Yokoyama.
+_Temporal Logic Formalisation of ISO 34502 Critical Scenarios: Modular Construction with the RSS Safety Distance._
+The 39th ACM/SIGAPP Symposium On Applied Computing (SAC), 2024 (to appear)
+[[arXiv](https://arxiv.org/abs/2403.18764)]
+
 - Sota Sato, Atsuyoshi Saimen, Masaki Waga, Kenji Takao, Ichiro Hasuo.
 _Hybrid System Falsification for Multiple-Constraint Parameter Synthesis: a Gas Turbine Case Study._
 24th International Symposium on Formal Methods, Lecture Notes in Computer Science, 2021
@@ -40,5 +49,10 @@ _Constrained Optimization for Hybrid System Falsification and Application to Con
 [[abstract](./papers/MT-CPS_2021_paper_7.pdf)]
 [[slides](./papers/mtcps21_sato_constrained_optimization.pdf)]
 
+## Grants
+
+- Grant-in-Aid for JSPS Fellows (Grant Number: 23KJ1011), 2023.04.25 -- 2026.03.31
+
 ## Contact
+
 email: sotasato_at_nii.ac.jp
