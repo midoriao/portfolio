@@ -20,7 +20,7 @@ In particular, I am currently working on [search-based testing](https://en.wikip
 ## Papers
 
 - Sota Sato, Jie An, Zhenya Zhang, Ichiro Hasuo.
-_Optimization-Based Model Checking for Complex STL Specifications._
+_Optimization-Based Model Checking and Trace Synthesis for Complex STL Specifications._
 36th International Conference on Computer-Aided Verification, 2024 (to appear)
 
 - Jesse Reimann, Nico Mansion, James Haydon, Benjamin Bray, Agnishom Chattopadhyay, Sota Sato, Masaki Waga, Étienne André, Ichiro Hasuo, Naoki Ueda, Yosuke Yokoyama.
@@ -40,6 +40,10 @@ _Constrained Optimization for Hybrid System Falsification and Application to Con
 
 ## Talks
 
+- Sota Sato, Jie An, Zhenya Zhang, Ichiro Hasuo.
+_Optimization-Based Model Checking and Trace Synthesis for Complex STL Specifications._
+36th International Conference on Computer-Aided Verification, July 28, 2024
+[[slides](./papers/cav24_sato_complex_stl.pdf)]
 - Sota Sato, Masaki Waga, Ichiro Hasuo.
 _Constrained Optimization for Hybrid System Falsification and Application to Conjunctive Synthesis._
 7th IFAC Conference on Analysis and Design of Hybrid Systems, July 9, 2021
