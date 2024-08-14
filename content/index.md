@@ -23,6 +23,7 @@ In particular, I am currently working on [search-based testing](https://en.wikip
 _Optimization-Based Model Checking and Trace Synthesis for Complex STL Specifications._
 36th International Conference on Computer-Aided Verification, 2024
 [[doi](https://doi.org/10.1007/978-3-031-65633-0_13)]
+[[arXiv](https://arxiv.org/abs/2408.06983)]
 
 - Jesse Reimann, Nico Mansion, James Haydon, Benjamin Bray, Agnishom Chattopadhyay, Sota Sato, Masaki Waga, Étienne André, Ichiro Hasuo, Naoki Ueda, Yosuke Yokoyama.
 _Temporal Logic Formalisation of ISO 34502 Critical Scenarios: Modular Construction with the RSS Safety Distance._
