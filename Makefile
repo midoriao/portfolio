@@ -10,6 +10,10 @@ TARGETS := $(patsubst $(SRCDIR)/%.md,$(DESTDIR)/%.html,$(SOURCES))
 .PHONY: all
 all: build serve
 
+.PHONY: watch
+watch:
+	watchexec -r -w . make
+
 .PHONY: clean
 clean:
 	rm -rf $(DESTDIR)/*
@@ -23,7 +27,7 @@ build: copy-static $(TARGETS)
 
 .PHONY: copy-static
 copy-static: $(STATICDIR) $(DESTDIR)
-	cp -Rf $(STATICDIR)/* $(DESTDIR)/
+	rsync -rhupi --delete $(STATICDIR)/* $(DESTDIR)
 
 .PHONY: deploy
 deploy:
