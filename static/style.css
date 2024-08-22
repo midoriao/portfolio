@@ -90,6 +90,10 @@ a:hover {
     font-weight: 200;
 }
 
+.loose-list li:not(:last-child) {
+    margin-bottom: 0.6lh;
+}
+
 figure {
     margin: 20px 40px;
 }
