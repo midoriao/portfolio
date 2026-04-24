@@ -3,6 +3,7 @@
 My portfolio page.
 
 GitHub Pages target: <https://midoriao.github.io/portfolio/>
+Previous URL: <https://group-mmm.org/~sotasato/>
 
 ## Usage
 
