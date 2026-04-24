@@ -1,5 +1,5 @@
 ---
-pagetitle: Sota Sato - Group MMM
+pagetitle: Sota Sato
 title: Sota Sato
 title-ja: 佐藤創太
 author: Sota Sato
@@ -7,8 +7,9 @@ author: Sota Sato
 
 ![My best homemade pumpkin pudding](./img/pumpkin_pudding.jpg){.photo}
 
-I am a student at {[National Institute of Informatics (NII)](https://www.nii.ac.jp/graduate/en/), [The Graduate University for Advanced Studies (SOKENDAI)](https://www.soken.ac.jp/en/)},
-supervised by [Ichiro Hasuo](https://group-mmm.org/~ichiro/).
+I am a researcher at the [Continuum Computing Trustworthiness Research Group](https://www.ipri.aist.go.jp/cctrg/en/index.html),
+[Intelligent Platforms Research Institute (IPRI)](https://www.ipri.aist.go.jp/en/index.html),
+[National Institute of Advanced Industrial Science and Technology (AIST)](https://www.aist.go.jp/index_en.html).
 
 My research interests lie in the application of [formal methods](https://en.wikipedia.org/wiki/Formal_methods) under uncertainty.
 In particular, I am currently working on [search-based testing](https://en.wikipedia.org/wiki/Search-based_software_engineering) on [hybrid systems](https://en.wikipedia.org/wiki/Hybrid_system) by [temporal logics](https://en.wikipedia.org/wiki/Temporal_logic) and [metaheuristic optimization algorithms](https://en.wikipedia.org/wiki/Metaheuristic).
@@ -75,4 +76,4 @@ The 39th ACM/SIGAPP Symposium On Applied Computing (SAC), 2024
 
 ## Contact
 
-email: sotasato_at_nii.ac.jp
+email: sota.sato_at_aist.go.jp
