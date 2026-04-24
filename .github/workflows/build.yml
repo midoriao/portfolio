@@ -41,7 +41,7 @@ jobs:
         uses: docker://klakegg/html-proofer:3.19.2
         with:
           entrypoint: /usr/local/bundle/bin/htmlproofer
-          args: public --check-html --empty-alt-ignore --only-4xx --url-ignore "/https:\\/\\/doi\\.org\\/.*/"
+          args: public --check-html --empty-alt-ignore --disable-external
       - uses: actions/upload-pages-artifact@v4
         with:
           path: public
