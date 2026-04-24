@@ -3,6 +3,9 @@ on:
   push:
     branches:
       - pandoc
+  pull_request:
+    branches:
+      - pandoc
   workflow_dispatch:
 
 permissions:
@@ -46,6 +49,7 @@ jobs:
   deploy:
     name: deploy to GitHub Pages
     needs: build-content
+    if: github.event_name == 'push' && github.ref == 'refs/heads/pandoc'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
