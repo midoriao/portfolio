@@ -19,7 +19,7 @@ This repository publishes with GitHub Pages via GitHub Actions.
 
 1. In the repository settings, open `Pages`.
 2. Set `Source` to `GitHub Actions`.
-3. Push to the `pandoc` branch.
+3. Push to the `main` branch.
 
 The workflow builds the site into `public/` and deploys it to:
 
